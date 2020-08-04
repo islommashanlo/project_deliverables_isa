@@ -1,6 +1,6 @@
 require 'pry'
 
-class Patients
+class Patient
     attr_accessor :name, :age
 
     def initialize(name, age)

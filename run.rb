@@ -6,23 +6,27 @@ def doc_or_pat
     if gets.strip == "doctor"
         def run_doc
             puts "Please enter your name"
-            gets.strip = name
+            name = gets.strip
             puts "Please type your specialty"
-            gets.strip = specialty
+            specialty = gets.strip
             puts "Please enter your years of practice"
-            get.strip.to_i = years
-            user = Doc.new(name, specialty, years)
+            years = gets.strip.to_i
+            user = Doctor.new(name, specialty, years)
         end
-    elsif get.strip == "patient"
+        run_doc
+    elsif gets.strip == "patient"
         def run_pat
             puts "Please enter your name"
-            gets.strip = name
+            name = gets.strip
             puts "Please enter your age"
-            get.strip = age
+            age = gets.strip
+            user = Patient.new(name, age)
         end
+        run_pat
     else
         puts "Please enter a valid response"
+        doc_or_pat
     end
 end
 
-
+doc_or_pat
