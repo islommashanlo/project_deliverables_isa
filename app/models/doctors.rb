@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor
 
     attr_accessor :name, :years
@@ -7,6 +9,9 @@ class Doctor
         @name = name
         @specialty = specialty
         @years = years
+
     end
-    
+
+    binding.pry
+
 end

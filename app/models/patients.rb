@@ -1,3 +1,5 @@
+require 'pry'
+
 class Patients
     attr_accessor :name, :age
 
