@@ -1,5 +1,5 @@
-require_relative app/models/doctors.rb
-require_relative app/models/patients.rb
+require_relative 'app/models/doctors.rb'
+require_relative 'app/models/patients.rb'
 
 def doc_or_pat
     puts "Please, identify yourself (doctor/patient)"
@@ -21,7 +21,7 @@ def doc_or_pat
             get.strip = age
         end
     else
-        "Please enter a valid response"
+        puts "Please enter a valid response"
     end
 end
 
