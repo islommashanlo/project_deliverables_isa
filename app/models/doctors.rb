@@ -25,5 +25,5 @@ class Doctor
             doctor.specialty == specs
         end
     end
-    binding.pry
+    
 end

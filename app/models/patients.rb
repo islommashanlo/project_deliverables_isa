@@ -26,6 +26,4 @@ class Patient
     self.impatience += 1
    end
 
-    binding.pry
-
 end
