@@ -1,6 +1,7 @@
 require_relative 'app/models/doctors.rb'
 require_relative 'app/models/patients.rb'
 
+
 def doc_or_pat
     puts "Please, identify yourself (doctor/patient)"
     identity = gets.strip
