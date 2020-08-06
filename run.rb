@@ -1,5 +1,6 @@
 require_relative 'app/models/doctors.rb'
 require_relative 'app/models/patients.rb'
+require "pry"
 
 
 def doc_or_pat
@@ -35,3 +36,5 @@ def doc_or_pat
 end
 
 doc_or_pat
+
+binding.pry
