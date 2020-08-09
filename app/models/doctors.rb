@@ -17,7 +17,7 @@ class Doctor
     end
 
     def greet
-        puts "Hi! How are you doing today? I apologize for the wait."
+        puts "Hi! I am Dr. #{self.name}. How are you doing today? I apologize for the wait."
     end
 
     def self.find_by_specialty(specs)
@@ -25,5 +25,24 @@ class Doctor
             doctor.specialty == specs
         end
     end
+
+    def appointments
+        Appointments.all.select do |e|
+            e.doctor == self
+        end
+    end
+
+    def patients
+        self.appointments.map do |p|
+            p.patient
+        end
+    end
+
+    def self.find_by_name(doc)
+        self.all.find do |e|
+            e.name == doc
+        end
+    end
+
     
 end
